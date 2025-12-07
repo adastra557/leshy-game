@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const TRANSLATIONS = {
         en: {
-            title: "Leshy&#x27;s Greeting Garden",
+            title: "Leshy's Greeting Garden",
             subtitle: "Match Slavic Greetings with Their Meanings",
             difficulty: "Difficulty",
             language: "Language",
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         ua: {
             title: "Сад Лешого",
-            subtitle: "Поєднайте слов&#x27;янські привітання з їх значеннями",
+            subtitle: "Поєднайте слов'янські привітання з їх значеннями",
             difficulty: "Рівень складності",
             language: "Мова",
             newGame: "Нова гра",
@@ -276,14 +276,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const backFace = document.createElement('div');
         backFace.className = 'card-face card-back';
-        backFace.innerHTML = '&lt;div class="flower-bud">🌱&lt;/div>';
+        backFace.innerHTML = '<div class="flower-bud">🌱</div>';
 
         const frontFace = document.createElement('div');
         frontFace.className = 'card-face card-front';
         frontFace.innerHTML = `
-            &lt;div class="card-text">${card.content.text}&lt;/div>
-            &lt;div class="card-pronunciation">${card.content.pron}&lt;/div>
-            &lt;div class="audio-icon" role="button" tabindex="0">🔊&lt;/div>
+            <div class="card-text">${card.content.text}</div>
+            <div class="card-pronunciation">${card.content.pron}</div>
+            <div class="audio-icon" role="button" tabindex="0">🔊</div>
         `;
 
         const audioIcon = frontFace.querySelector('.audio-icon');
@@ -376,13 +376,13 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.finalAccuracy.textContent = `${accuracy}%`;
 
         // Add badges based on performance
-        let badges = ['&lt;div class="badge">🏅&lt;/div>'];
+        let badges = ['<div class="badge">🏅</div>'];
         if (accuracy >= 90) {
-            badges.push('&lt;div class="badge">🥇&lt;/div>');
+            badges.push('<div class="badge">🥇</div>');
         } else if (accuracy >= 75) {
-            badges.push('&lt;div class="badge">🥈&lt;/div>');
+            badges.push('<div class="badge">🥈</div>');
         } else {
-            badges.push('&lt;div class="badge">🥉&lt;/div>');
+            badges.push('<div class="badge">🥉</div>');
         }
         elements.badgeDisplay.innerHTML = badges.join('');
 
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getCompletionMessage(lang) {
         const messages = {
-            en: 'Amazing! Your garden is complete. You&#x27;ve mastered the greetings!',
+            en: 'Amazing! Your garden is complete. You've mastered the greetings!',
             ru: 'Удивительно! Ваш сад завершен. Вы освоили приветствия!',
             ua: 'Чудово! Ваш сад завершено. Ви освоїли привітання!'
         };
@@ -486,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function playSound(type) {
         // Play audio based on type: 'match', 'mismatch', 'victory'
         console.log(`Playing ${type} sound`);
-        // In production, use Web Audio API or &lt;audio> elements
+        // In production, use Web Audio API or <audio> elements
     }
 
     // Event Listeners Setup
