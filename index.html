@@ -1,103 +1,103 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Leshy&#x27;s Greeting Garden - SlavicBridge Interactive Game&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;!-- ===== HEADER SECTION ===== --&gt;
-    &lt;div class=&quot;game-header&quot;&gt;
-        &lt;h1 class=&quot;game-title&quot; id=&quot;gameTitle&quot;&gt;Leshy&#x27;s Greeting Garden&lt;/h1&gt;
-        &lt;p class=&quot;game-subtitle&quot; id=&quot;gameSubtitle&quot;&gt;Match Slavic Greetings with Their Meanings&lt;/p&gt;
-    &lt;/div&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leshy's Greeting Garden - SlavicBridge Interactive Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== HEADER SECTION ===== -->
+    <div class="game-header">
+        <h1 class="game-title" id="gameTitle">Leshy's Greeting Garden</h1>
+        <p class="game-subtitle" id="gameSubtitle">Match Slavic Greetings with Their Meanings</p>
+    </div>
 
-    &lt;!-- ===== CONTROL PANEL ===== --&gt;
-    &lt;div class=&quot;control-panel&quot;&gt;
-        &lt;div class=&quot;control-group&quot;&gt;
-            &lt;span class=&quot;control-label&quot; id=&quot;difficultyLabel&quot;&gt;Difficulty&lt;/span&gt;
-            &lt;div class=&quot;difficulty-selector&quot;&gt;
-                &lt;button class=&quot;difficulty-btn active&quot; data-level=&quot;sprout&quot;&gt;Sprout (8)&lt;/button&gt;
-                &lt;button class=&quot;difficulty-btn&quot; data-level=&quot;blossom&quot;&gt;Blossom (12)&lt;/button&gt;
-                &lt;button class=&quot;difficulty-btn&quot; data-level=&quot;bloom&quot;&gt;Bloom (20)&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+    <!-- ===== CONTROL PANEL ===== -->
+    <div class="control-panel">
+        <div class="control-group">
+            <span class="control-label" id="difficultyLabel">Difficulty</span>
+            <div class="difficulty-selector">
+                <button class="difficulty-btn active" data-level="sprout">Sprout (8)</button>
+                <button class="difficulty-btn" data-level="blossom">Blossom (12)</button>
+                <button class="difficulty-btn" data-level="bloom">Bloom (20)</button>
+            </div>
+        </div>
 
-        &lt;div class=&quot;control-group&quot;&gt;
-            &lt;span class=&quot;control-label&quot; id=&quot;languageLabel&quot;&gt;Language&lt;/span&gt;
-            &lt;div class=&quot;language-toggle&quot;&gt;
-                &lt;button class=&quot;lang-btn active&quot; data-lang=&quot;en&quot;&gt;English&lt;/button&gt;
-                &lt;button class=&quot;lang-btn&quot; data-lang=&quot;ru&quot;&gt;Русский&lt;/button&gt;
-                &lt;button class=&quot;lang-btn&quot; data-lang=&quot;ua&quot;&gt;Українська&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+        <div class="control-group">
+            <span class="control-label" id="languageLabel">Language</span>
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ru">Русский</button>
+                <button class="lang-btn" data-lang="ua">Українська</button>
+            </div>
+        </div>
 
-        &lt;button class=&quot;btn btn-primary&quot; id=&quot;newGameBtn&quot;&gt;New Game&lt;/button&gt;
-        &lt;button class=&quot;btn btn-secondary&quot; id=&quot;resetBtn&quot;&gt;Reset&lt;/button&gt;
-    &lt;/div&gt;
+        <button class="btn btn-primary" id="newGameBtn">New Game</button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+    </div>
 
-    &lt;!-- ===== STATS PANEL ===== --&gt;
-    &lt;div class=&quot;stats-panel&quot;&gt;
-        &lt;div class=&quot;stat-item&quot;&gt;
-            &lt;div class=&quot;stat-label&quot; id=&quot;matchesLabel&quot;&gt;Matches&lt;/div&gt;
-            &lt;div class=&quot;stat-value&quot; id=&quot;matchesCount&quot;&gt;0&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;stat-item&quot;&gt;
-            &lt;div class=&quot;stat-label&quot; id=&quot;attemptsLabel&quot;&gt;Attempts&lt;/div&gt;
-            &lt;div class=&quot;stat-value&quot; id=&quot;attemptsCount&quot;&gt;0&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;stat-item&quot;&gt;
-            &lt;div class=&quot;stat-label&quot; id=&quot;timeLabel&quot;&gt;Time&lt;/div&gt;
-            &lt;div class=&quot;stat-value&quot; id=&quot;timerDisplay&quot;&gt;0:00&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;stat-item&quot;&gt;
-            &lt;div class=&quot;stat-label&quot; id=&quot;accuracyLabel&quot;&gt;Accuracy&lt;/div&gt;
-            &lt;div class=&quot;stat-value&quot; id=&quot;accuracyDisplay&quot;&gt;100%&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <!-- ===== STATS PANEL ===== -->
+    <div class="stats-panel">
+        <div class="stat-item">
+            <div class="stat-label" id="matchesLabel">Matches</div>
+            <div class="stat-value" id="matchesCount">0</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label" id="attemptsLabel">Attempts</div>
+            <div class="stat-value" id="attemptsCount">0</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label" id="timeLabel">Time</div>
+            <div class="stat-value" id="timerDisplay">0:00</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label" id="accuracyLabel">Accuracy</div>
+            <div class="stat-value" id="accuracyDisplay">100%</div>
+        </div>
+    </div>
 
-    &lt;!-- ===== GAME BOARD ===== --&gt;
-    &lt;div class=&quot;game-container&quot;&gt;
-        &lt;div class=&quot;garden-board sprout&quot; id=&quot;gardenBoard&quot;&gt;
-            &lt;!-- Cards will be dynamically generated here --&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <!-- ===== GAME BOARD ===== -->
+    <div class="game-container">
+        <div class="garden-board sprout" id="gardenBoard">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+    </div>
 
-    &lt;!-- ===== LESHY CHARACTER ===== --&gt;
-    &lt;div class=&quot;leshy-container&quot;&gt;
-        &lt;div class=&quot;leshy-speech&quot; id=&quot;leshySpeech&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;
+    <!-- ===== LESHY CHARACTER ===== -->
+    <div class="leshy-container">
+        <div class="leshy-speech" id="leshySpeech" role="status" aria-live="polite">
             Welcome to my garden! Match the greetings to help the flowers bloom! 🌱
-        &lt;/div&gt;
-        &lt;div class=&quot;leshy-character&quot;&gt;🧙‍♂️&lt;/div&gt;
-    &lt;/div&gt;
+        </div>
+        <div class="leshy-character">🧙‍♂️</div>
+    </div>
 
-    &lt;!-- ===== COMPLETION MODAL ===== --&gt;
-    &lt;div class=&quot;modal&quot; id=&quot;completionModal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;
-        &lt;div class=&quot;modal-content&quot;&gt;
-            &lt;h2 class=&quot;modal-title&quot; id=&quot;modalTitle&quot;&gt;Garden Complete! 🌸&lt;/h2&gt;
-            &lt;div class=&quot;celebration-emoji&quot;&gt;🎉&lt;/div&gt;
-            &lt;div class=&quot;modal-stats&quot;&gt;
-                &lt;div class=&quot;modal-stat-row&quot;&gt;
-                    &lt;span id=&quot;modalTimeLabel&quot;&gt;Time:&lt;/span&gt;
-                    &lt;span id=&quot;finalTime&quot;&gt;0:00&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;modal-stat-row&quot;&gt;
-                    &lt;span id=&quot;modalAttemptsLabel&quot;&gt;Attempts:&lt;/span&gt;
-                    &lt;span id=&quot;finalAttempts&quot;&gt;0&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;modal-stat-row&quot;&gt;
-                    &lt;span id=&quot;modalAccuracyLabel&quot;&gt;Accuracy:&lt;/span&gt;
-                    &lt;span id=&quot;finalAccuracy&quot;&gt;100%&lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;badge-display&quot; id=&quot;badgeDisplay&quot;&gt;
-                &lt;!-- Badges will be added dynamically --&gt;
-            &lt;/div&gt;
-            &lt;button class=&quot;btn btn-primary&quot; id=&quot;playAgainBtn&quot;&gt;Play Again&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <!-- ===== COMPLETION MODAL ===== -->
+    <div class="modal" id="completionModal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <h2 class="modal-title" id="modalTitle">Garden Complete! 🌸</h2>
+            <div class="celebration-emoji">🎉</div>
+            <div class="modal-stats">
+                <div class="modal-stat-row">
+                    <span id="modalTimeLabel">Time:</span>
+                    <span id="finalTime">0:00</span>
+                </div>
+                <div class="modal-stat-row">
+                    <span id="modalAttemptsLabel">Attempts:</span>
+                    <span id="finalAttempts">0</span>
+                </div>
+                <div class="modal-stat-row">
+                    <span id="modalAccuracyLabel">Accuracy:</span>
+                    <span id="finalAccuracy">100%</span>
+                </div>
+            </div>
+            <div class="badge-display" id="badgeDisplay">
+                <!-- Badges will be added dynamically -->
+            </div>
+            <button class="btn btn-primary" id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
 
-    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+    <script src="script.js"></script>
+</body>
+</html>
