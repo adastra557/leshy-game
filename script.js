@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const card1 = gameState.cards[idx1];
         const card2 = gameState.cards[idx2];
 
-        if (card1.content.match === card2.content.text || card1.content.text === card2.content.match) {
+        if (card1.content.text === card2.content.text || card1.content.match === card2.content.match) {
             // Match!
             gameState.cards[idx1].matched = true;
             gameState.cards[idx2].matched = true;
