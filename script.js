@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         difficulties: {
             sprout: { pairs: 4, previewTime: 3000, grid: 'repeat(4, 120px)' },
             blossom: { pairs: 6, previewTime: 2000, grid: 'repeat(4, 110px)' },
-            bloom: { pairs: 8, previewTime: 0, grid: 'repeat(5, 100px)' }
+            bloom: { pairs: 10, previewTime: 0, grid: 'repeat(5, 100px)' }
         },
         languages: {
             en: { name: 'English', dir: 'ltr' },
