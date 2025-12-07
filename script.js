@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getCompletionMessage(lang) {
         const messages = {
-            en: 'Amazing! Your garden is complete. You've mastered the greetings!',
+            en: 'Amazing! Your garden is complete. You&#x27;ve mastered the greetings!',
             ru: 'Удивительно! Ваш сад завершен. Вы освоили приветствия!',
             ua: 'Чудово! Ваш сад завершено. Ви освоїли привітання!'
         };
