@@ -47,84 +47,84 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const TRANSLATIONS = {
         en: {
-            title: &quot;Leshy&#x27;s Greeting Garden&quot;,
-            subtitle: &quot;Match Slavic Greetings with Their Meanings&quot;,
-            difficulty: &quot;Difficulty&quot;,
-            language: &quot;Language&quot;,
-            newGame: &quot;New Game&quot;,
-            reset: &quot;Reset&quot;,
-            matches: &quot;Matches&quot;,
-            attempts: &quot;Attempts&quot;,
-            time: &quot;Time&quot;,
-            accuracy: &quot;Accuracy&quot;,
-            modalTitle: &quot;Garden Complete! 🌸&quot;,
-            playAgain: &quot;Play Again&quot;,
-            modalTime: &quot;Time:&quot;,
-            modalAttempts: &quot;Attempts:&quot;,
-            modalAccuracy: &quot;Accuracy:&quot;,
+            title: "Leshy&#x27;s Greeting Garden",
+            subtitle: "Match Slavic Greetings with Their Meanings",
+            difficulty: "Difficulty",
+            language: "Language",
+            newGame: "New Game",
+            reset: "Reset",
+            matches: "Matches",
+            attempts: "Attempts",
+            time: "Time",
+            accuracy: "Accuracy",
+            modalTitle: "Garden Complete! 🌸",
+            playAgain: "Play Again",
+            modalTime: "Time:",
+            modalAttempts: "Attempts:",
+            modalAccuracy: "Accuracy:",
             difficultyNames: {
-                sprout: &quot;Sprout (8)&quot;,
-                blossom: &quot;Blossom (12)&quot;,
-                bloom: &quot;Bloom (20)&quot;
+                sprout: "Sprout (8)",
+                blossom: "Blossom (12)",
+                bloom: "Bloom (20)"
             },
             langNames: {
-                en: &quot;English&quot;,
-                ru: &quot;Russian&quot;,
-                ua: &quot;Ukrainian&quot;
+                en: "English",
+                ru: "Russian",
+                ua: "Ukrainian"
             }
         },
         ru: {
-            title: &quot;Сад Лешего&quot;,
-            subtitle: &quot;Сопоставьте славянские приветствия с их значениями&quot;,
-            difficulty: &quot;Сложность&quot;,
-            language: &quot;Язык&quot;,
-            newGame: &quot;Новая игра&quot;,
-            reset: &quot;Сброс&quot;,
-            matches: &quot;Совпадения&quot;,
-            attempts: &quot;Попытки&quot;,
-            time: &quot;Время&quot;,
-            accuracy: &quot;Точность&quot;,
-            modalTitle: &quot;Сад завершен! 🌸&quot;,
-            playAgain: &quot;Играть снова&quot;,
-            modalTime: &quot;Время:&quot;,
-            modalAttempts: &quot;Попытки:&quot;,
-            modalAccuracy: &quot;Точность:&quot;,
+            title: "Сад Лешего",
+            subtitle: "Сопоставьте славянские приветствия с их значениями",
+            difficulty: "Сложность",
+            language: "Язык",
+            newGame: "Новая игра",
+            reset: "Сброс",
+            matches: "Совпадения",
+            attempts: "Попытки",
+            time: "Время",
+            accuracy: "Точность",
+            modalTitle: "Сад завершен! 🌸",
+            playAgain: "Играть снова",
+            modalTime: "Время:",
+            modalAttempts: "Попытки:",
+            modalAccuracy: "Точность:",
             difficultyNames: {
-                sprout: &quot;Росток (8)&quot;,
-                blossom: &quot;Цветок (12)&quot;,
-                bloom: &quot;Цветение (20)&quot;
+                sprout: "Росток (8)",
+                blossom: "Цветок (12)",
+                bloom: "Цветение (20)"
             },
             langNames: {
-                en: &quot;Английский&quot;,
-                ru: &quot;Русский&quot;,
-                ua: &quot;Украинский&quot;
+                en: "Английский",
+                ru: "Русский",
+                ua: "Украинский"
             }
         },
         ua: {
-            title: &quot;Сад Лешого&quot;,
-            subtitle: &quot;Поєднайте слов&#x27;янські привітання з їх значеннями&quot;,
-            difficulty: &quot;Рівень складності&quot;,
-            language: &quot;Мова&quot;,
-            newGame: &quot;Нова гра&quot;,
-            reset: &quot;Скинути&quot;,
-            matches: &quot;Пари&quot;,
-            attempts: &quot;Спроби&quot;,
-            time: &quot;Час&quot;,
-            accuracy: &quot;Точність&quot;,
-            modalTitle: &quot;Сад завершено! 🌸&quot;,
-            playAgain: &quot;Грати знову&quot;,
-            modalTime: &quot;Час:&quot;,
-            modalAttempts: &quot;Спроби:&quot;,
-            modalAccuracy: &quot;Точність:&quot;,
+            title: "Сад Лешого",
+            subtitle: "Поєднайте слов&#x27;янські привітання з їх значеннями",
+            difficulty: "Рівень складності",
+            language: "Мова",
+            newGame: "Нова гра",
+            reset: "Скинути",
+            matches: "Пари",
+            attempts: "Спроби",
+            time: "Час",
+            accuracy: "Точність",
+            modalTitle: "Сад завершено! 🌸",
+            playAgain: "Грати знову",
+            modalTime: "Час:",
+            modalAttempts: "Спроби:",
+            modalAccuracy: "Точність:",
             difficultyNames: {
-                sprout: &quot;Паросток (8)&quot;,
-                blossom: &quot;Квітка (12)&quot;,
-                bloom: &quot;Квітіння (20)&quot;
+                sprout: "Паросток (8)",
+                blossom: "Квітка (12)",
+                bloom: "Квітіння (20)"
             },
             langNames: {
-                en: &quot;Англійська&quot;,
-                ru: &quot;Російська&quot;,
-                ua: &quot;Українська&quot;
+                en: "Англійська",
+                ru: "Російська",
+                ua: "Українська"
             }
         }
     };
@@ -190,30 +190,30 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('modalAccuracyLabel').textContent = t.modalAccuracy;
 
         const diffNames = t.difficultyNames;
-        document.querySelector('[data-level=&quot;sprout&quot;]').textContent = diffNames.sprout;
-        document.querySelector('[data-level=&quot;blossom&quot;]').textContent = diffNames.blossom;
-        document.querySelector('[data-level=&quot;bloom&quot;]').textContent = diffNames.bloom;
+        document.querySelector('[data-level="sprout"]').textContent = diffNames.sprout;
+        document.querySelector('[data-level="blossom"]').textContent = diffNames.blossom;
+        document.querySelector('[data-level="bloom"]').textContent = diffNames.bloom;
 
         const langNames = t.langNames;
-        document.querySelector('[data-lang=&quot;en&quot;]').textContent = langNames.en;
-        document.querySelector('[data-lang=&quot;ru&quot;]').textContent = langNames.ru;
-        document.querySelector('[data-lang=&quot;ua&quot;]').textContent = langNames.ua;
+        document.querySelector('[data-lang="en"]').textContent = langNames.en;
+        document.querySelector('[data-lang="ru"]').textContent = langNames.ru;
+        document.querySelector('[data-lang="ua"]').textContent = langNames.ua;
     }
 
     // Update Difficulty
     function updateDifficulty(difficulty) {
-        gameState.currentDifficulty = Object.keys(GAME_CONFIG.difficulties).find(key =&gt; GAME_CONFIG.difficulties[key] === difficulty);
+        gameState.currentDifficulty = Object.keys(GAME_CONFIG.difficulties).find(key => GAME_CONFIG.difficulties[key] === difficulty);
         elements.gardenBoard.className = `garden-board ${gameState.currentDifficulty}`;
-        elements.difficultyBtns.forEach(btn =&gt; btn.classList.remove('active'));
-        document.querySelector(`[data-level=&quot;${gameState.currentDifficulty}&quot;]`).classList.add('active');
+        elements.difficultyBtns.forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`[data-level="${gameState.currentDifficulty}"]`).classList.add('active');
         startNewGame();
     }
 
     // Update Language
     function updateLanguage(lang) {
         gameState.currentLanguage = lang;
-        elements.langBtns.forEach(btn =&gt; btn.classList.remove('active'));
-        document.querySelector(`[data-lang=&quot;${lang}&quot;]`).classList.add('active');
+        elements.langBtns.forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
         document.documentElement.lang = lang;
         document.documentElement.dir = GAME_CONFIG.languages[lang].dir;
         updateUIText();
@@ -225,9 +225,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function startNewGame() {
         const pairs = GAME_CONFIG.difficulties[gameState.currentDifficulty].pairs;
         const langData = GAME_CONFIG.greetings[gameState.currentLanguage].slice(0, pairs);
-        const cardsData = [...langData, ...langData].sort(() =&gt; Math.random() - 0.5);
+        const cardsData = [...langData, ...langData].sort(() => Math.random() - 0.5);
 
-        gameState.cards = cardsData.map((data, index) =&gt; ({
+        gameState.cards = cardsData.map((data, index) => ({
             id: index,
             content: data,
             flipped: false,
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         renderBoard();
         startTimer();
-        if (GAME_CONFIG.difficulties[gameState.currentDifficulty].previewTime &gt; 0) {
+        if (GAME_CONFIG.difficulties[gameState.currentDifficulty].previewTime > 0) {
             previewCards();
         }
         updateLeshySpeech(getInstructionMessage(gameState.currentLanguage));
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render Board
     function renderBoard() {
         elements.gardenBoard.innerHTML = '';
-        gameState.cards.forEach((card, index) =&gt; {
+        gameState.cards.forEach((card, index) => {
             const cardElement = createCardElement(card, index);
             elements.gardenBoard.appendChild(cardElement);
         });
@@ -276,14 +276,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const backFace = document.createElement('div');
         backFace.className = 'card-face card-back';
-        backFace.innerHTML = '&lt;div class=&quot;flower-bud&quot;&gt;🌱&lt;/div&gt;';
+        backFace.innerHTML = '&lt;div class="flower-bud">🌱&lt;/div>';
 
         const frontFace = document.createElement('div');
         frontFace.className = 'card-face card-front';
         frontFace.innerHTML = `
-            &lt;div class=&quot;card-text&quot;&gt;${card.content.text}&lt;/div&gt;
-            &lt;div class=&quot;card-pronunciation&quot;&gt;${card.content.pron}&lt;/div&gt;
-            &lt;div class=&quot;audio-icon&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;🔊&lt;/div&gt;
+            &lt;div class="card-text">${card.content.text}&lt;/div>
+            &lt;div class="card-pronunciation">${card.content.pron}&lt;/div>
+            &lt;div class="audio-icon" role="button" tabindex="0">🔊&lt;/div>
         `;
 
         const audioIcon = frontFace.querySelector('.audio-icon');
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardIndex = parseInt(e.currentTarget.dataset.index);
         const card = gameState.cards[cardIndex];
 
-        if (card.flipped || card.matched || gameState.flippedCards.length &gt;= 2) return;
+        if (card.flipped || card.matched || gameState.flippedCards.length >= 2) return;
 
         flipCard(cardIndex);
         gameState.flippedCards.push(cardIndex);
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Flip Card
     function flipCard(index) {
         gameState.cards[index].flipped = true;
-        document.querySelector(`[data-index=&quot;${index}&quot;]`).classList.add('flipped');
+        document.querySelector(`[data-index="${index}"]`).classList.add('flipped');
     }
 
     // Check Match
@@ -339,8 +339,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Match!
             gameState.cards[idx1].matched = true;
             gameState.cards[idx2].matched = true;
-            document.querySelector(`[data-index=&quot;${idx1}&quot;]`).classList.add('matched');
-            document.querySelector(`[data-index=&quot;${idx2}&quot;]`).classList.add('matched');
+            document.querySelector(`[data-index="${idx1}"]`).classList.add('matched');
+            document.querySelector(`[data-index="${idx2}"]`).classList.add('matched');
             gameState.matches++;
             playSound('match');
             updateLeshySpeech(getMatchMessage(gameState.currentLanguage, true));
@@ -350,13 +350,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             // No match
-            document.querySelector(`[data-index=&quot;${idx1}&quot;]`).classList.add('shake');
-            document.querySelector(`[data-index=&quot;${idx2}&quot;]`).classList.add('shake');
-            setTimeout(() =&gt; {
+            document.querySelector(`[data-index="${idx1}"]`).classList.add('shake');
+            document.querySelector(`[data-index="${idx2}"]`).classList.add('shake');
+            setTimeout(() => {
                 gameState.cards[idx1].flipped = false;
                 gameState.cards[idx2].flipped = false;
-                document.querySelector(`[data-index=&quot;${idx1}&quot;]`).classList.remove('flipped', 'shake');
-                document.querySelector(`[data-index=&quot;${idx2}&quot;]`).classList.remove('flipped', 'shake');
+                document.querySelector(`[data-index="${idx1}"]`).classList.remove('flipped', 'shake');
+                document.querySelector(`[data-index="${idx2}"]`).classList.remove('flipped', 'shake');
             }, 500);
             playSound('mismatch');
             updateLeshySpeech(getMatchMessage(gameState.currentLanguage, false));
@@ -376,13 +376,13 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.finalAccuracy.textContent = `${accuracy}%`;
 
         // Add badges based on performance
-        let badges = ['&lt;div class=&quot;badge&quot;&gt;🏅&lt;/div&gt;'];
-        if (accuracy &gt;= 90) {
-            badges.push('&lt;div class=&quot;badge&quot;&gt;🥇&lt;/div&gt;');
-        } else if (accuracy &gt;= 75) {
-            badges.push('&lt;div class=&quot;badge&quot;&gt;🥈&lt;/div&gt;');
+        let badges = ['&lt;div class="badge">🏅&lt;/div>'];
+        if (accuracy >= 90) {
+            badges.push('&lt;div class="badge">🥇&lt;/div>');
+        } else if (accuracy >= 75) {
+            badges.push('&lt;div class="badge">🥈&lt;/div>');
         } else {
-            badges.push('&lt;div class=&quot;badge&quot;&gt;🥉&lt;/div&gt;');
+            badges.push('&lt;div class="badge">🥉&lt;/div>');
         }
         elements.badgeDisplay.innerHTML = badges.join('');
 
@@ -410,12 +410,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Preview Cards
     function previewCards() {
-        gameState.cards.forEach((_, index) =&gt; flipCard(index));
-        setTimeout(() =&gt; {
-            gameState.cards.forEach((card, index) =&gt; {
+        gameState.cards.forEach((_, index) => flipCard(index));
+        setTimeout(() => {
+            gameState.cards.forEach((card, index) => {
                 if (!card.matched) {
                     card.flipped = false;
-                    document.querySelector(`[data-index=&quot;${index}&quot;]`).classList.remove('flipped');
+                    document.querySelector(`[data-index="${index}"]`).classList.remove('flipped');
                 }
             });
         }, GAME_CONFIG.difficulties[gameState.currentDifficulty].previewTime);
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateStats() {
         elements.matchesCount.textContent = gameState.matches;
         elements.attemptsCount.textContent = gameState.attempts;
-        const accuracy = gameState.attempts &gt; 0 ? Math.round((gameState.matches * 2 / gameState.attempts) * 100) : 100;
+        const accuracy = gameState.attempts > 0 ? Math.round((gameState.matches * 2 / gameState.attempts) * 100) : 100;
         elements.accuracyDisplay.textContent = `${accuracy}%`;
     }
 
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateLeshySpeech(message) {
         elements.leshySpeech.textContent = message;
         elements.leshySpeech.classList.add('show');
-        setTimeout(() =&gt; elements.leshySpeech.classList.remove('show'), 3000);
+        setTimeout(() => elements.leshySpeech.classList.remove('show'), 3000);
     }
 
     // Modal Functions
@@ -486,22 +486,22 @@ document.addEventListener('DOMContentLoaded', function() {
     function playSound(type) {
         // Play audio based on type: 'match', 'mismatch', 'victory'
         console.log(`Playing ${type} sound`);
-        // In production, use Web Audio API or &lt;audio&gt; elements
+        // In production, use Web Audio API or &lt;audio> elements
     }
 
     // Event Listeners Setup
     function setupEventListeners() {
         // Difficulty buttons
-        elements.difficultyBtns.forEach(btn =&gt; {
-            btn.addEventListener('click', () =&gt; {
+        elements.difficultyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
                 const level = btn.dataset.level;
                 updateDifficulty(GAME_CONFIG.difficulties[level]);
             });
         });
 
         // Language buttons
-        elements.langBtns.forEach(btn =&gt; {
-            btn.addEventListener('click', () =&gt; {
+        elements.langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
                 updateLanguage(btn.dataset.lang);
             });
         });
@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.resetBtn.addEventListener('click', startNewGame);
 
         // Play Again
-        elements.playAgainBtn.addEventListener('click', () =&gt; {
+        elements.playAgainBtn.addEventListener('click', () => {
             hideModal();
             startNewGame();
         });
